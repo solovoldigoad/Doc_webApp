@@ -1,0 +1,94 @@
+
+.hospitalDatils{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hospitalImg{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.hospitalImg img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color:#50c879;
+}
+
+#hospitalName{
+    font-size: larger;
+    font-weight: 700;
+}
+.top_data{
+     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100px;
+    align-items: center;
+}
+.tophospitalDetails{
+    display: flex;
+    flex-direction: column;
+     position: relative;
+    top: 5px;
+    left: 25px; 
+    height: 80px;
+    }
+.social_info{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 50px;
+    color: black;
+}
+
+#hospitalAbout{
+    color: black;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: large;
+}
+.about{
+    margin-top: 20px;
+    height: 200px;
+    width: 95%;
+}
+
+.bottom_info{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 5px 40px;
+    background-color: #f1f0f1;
+}
+
+.hospital_btn{
+    width: 70%;
+    height: 50px;
+    border-radius:30px;
+    font-size: large;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#first{
+   background-color: #50c879;
+  color:white
+}
+
+#second{
+    color: #50c879;
+    background-color: white;
+}
+

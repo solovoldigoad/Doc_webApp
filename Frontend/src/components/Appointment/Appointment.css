@@ -1,0 +1,210 @@
+#root{
+    background-color:white;
+}
+body{
+    background-color: white;
+}
+.appoScreen{
+    display: flex;
+    width: 340px;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: black; */
+}
+.appoDate{
+    width: 100%;
+    height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: darkblue; */
+  margin-bottom: 10px;
+}
+.todayDate{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: coral; */
+    justify-content: space-around;
+    align-items: center;
+}
+.todayMonth{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+#date p{
+  font-size: 60px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#day{
+  font-size: 18px;
+}
+
+#month{
+    font-family: "Balthazar", serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #f0f0f0;
+    /* background-color:firebrick; */
+}
+.DocPhoto{
+    height:80px ;
+    width: 80px;
+}
+.DocPhoto img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.weekList{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.week{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.dayName{
+    height: 75px;
+    width: 45px;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10xp;
+    background-color: #53cb7b;
+    background-color: #f0f0f0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    cursor: pointer;
+}
+
+.dayName.selected {
+    background-color:#53cb7b;
+    color: white;
+}
+
+.dayName.selected p {
+    color:black;
+}
+
+
+.weekDay{
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: darkgrey;
+}
+
+.lableOfTable{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+}
+.fontLable{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content:space-around;
+}
+#tileLable{
+ font-size: larger;
+ font-family: Arial, Helvetica, sans-serif;
+}
+#detalisLable{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.appoTabel{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top:10px;
+
+}
+.apporow{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: blanchedalmond;
+}
+.appoTime{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 3px;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.upperTime{
+
+    font-size: 21px;
+    color: #53cb7b;
+}
+
+.lowerTime{
+    font-size: 18px;
+    color:black ;
+}
+
+.line{
+    height: 100%;
+}
+.seprateline{
+    font-size: x-large;
+}
+
+.patientBox{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 10px;
+    background-color: #53cb7b;
+    justify-content: center;
+    padding: 10px;
+}
+
+.patientImg{
+    border-radius: 50%;
+    background-color: rosybrown;
+
+}
+.patientInfo{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #f0f0f0;
+    
+}
+.topRow{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+.patientname{
+  font-size: 20px;
+
+}
+.gender{
+    font-size: 17px;
+}
