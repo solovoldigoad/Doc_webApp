@@ -30,6 +30,10 @@ app.use(cookieParser())
 
 app.use('/api/v1/users', userRouter);
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the API');
+});
+
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
