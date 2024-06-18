@@ -1,8 +1,16 @@
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static-build",
+        "config": { "zeroConfig": true }
+      },
+      {
+        "src": "src/**/*",
+        "use": "@vercel/node",
+        "config": { "zeroConfig": true }
+      }
     ]
-}
+  }
+  
