@@ -2,14 +2,12 @@
     "version": 2,
     "builds": [
       {
-        "src": "index.html",
-        "use": "@vercel/static-build",
-        "config": { "zeroConfig": true }
+        "src": "package.json",
+        "use": "@vercel/node"
       },
       {
-        "src": "src/**/*",
-        "use": "@vercel/node",
-        "config": { "zeroConfig": true }
+        "src": "index.html",
+        "use": "@vercel/static-build"
       }
     ]
   }
