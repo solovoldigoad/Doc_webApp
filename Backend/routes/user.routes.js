@@ -1,6 +1,6 @@
 
 import { Router } from 'express';
-import { LoginUser, LogoutUser, registerUser } from '../controllers/user.controller.js'; // corrected path
+import { LoginUser, LogoutUser, registerUser } from '../controllers/user.controller.js'; 
 import { verifyJWT } from '../middlerware/authrization.js';
 import { Doc_info } from '../Api/DocApi.js';
 import {Hospitla_info} from '../Api/Hospital.js'
