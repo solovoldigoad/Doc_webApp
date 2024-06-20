@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api' : 'doc-web-app-backend.vercel.app',
+      // '/api' : 'doc-web-app-backend.vercel.app',
     }
     },
   build: {
