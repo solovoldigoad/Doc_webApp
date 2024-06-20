@@ -1,6 +1,6 @@
 
 import { Router } from 'express';
-import { LoginUser, LogoutUser,  } from '../controllers/user.controller.js'; 
+import { LoginUser, LogoutUser, registerUser } from '../controllers/user.controller.js'; 
 import { verifyJWT } from '../middlerware/authrization.js';
 import { Doc_info } from '../Api/DocApi.js';
 import {Hospitla_info} from '../Api/Hospital.js'
@@ -12,7 +12,7 @@ import { getAllSlots } from '../controllers/user.controller.js';
 
 const router = Router();
 
-// router.post('/register', registerUser);
+router.post('/register', registerUser);
 
 router.post('/login' , LoginUser)
 

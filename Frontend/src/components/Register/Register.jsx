@@ -17,7 +17,7 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://doc-web-app-backend.vercel.app/register', {
+      const response = await axios.post('https://doc-web-app-backend.vercel.app/api/v1/users/register', {
         username,
         password,
         email,
