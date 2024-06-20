@@ -6,9 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   server: {
   proxy: {
-    '/api' : 'doc-web-app-backend.vercel.app',
-    changeOrigin: true,
-        secure: false,
+    '/api' : 'doc-web-app-backend.vercel.app'
   }
   },
   build: {

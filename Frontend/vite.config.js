@@ -7,8 +7,6 @@ export default defineConfig({
   server: {
     proxy: {
       '/api' : 'doc-web-app-backend.vercel.app',
-      changeOrigin: true,
-        secure: false,
     }
     },
   build: {
