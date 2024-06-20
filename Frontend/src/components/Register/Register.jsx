@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import './Register.css';
 import { UserContext } from '../../assets/UserContext/UserContext';
-import apiClient from '../utils/uitls.js';
+
 
 const RegisterForm = () => {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await apiClient.post('/api/v1/users/register', {
+      const response = await axios.post('https://doc-web-app-backend.vercel.app/api/v1/users/register', {
         username,
         password,
         email,

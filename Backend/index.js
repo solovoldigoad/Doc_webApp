@@ -34,6 +34,13 @@ app.get('/', (req, res) => {
   res.send('Welcome to the API');
 });
 
+app.use((err, req, res, next) => {
+  console.error('Error:', err);
+  res.status(err.status || 500).json({
+    message: err.message || 'Internal Server Error',
+  });
+});
+
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
