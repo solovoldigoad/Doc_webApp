@@ -21,7 +21,15 @@ const RegisterForm = () => {
         username,
         password,
         email,
-      });
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        withCredentials: true
+      }, 
+    );
+    console.log(response.data);
       setUser({ username: response.data.username });
       alert('User Registered Successfully');
       navigate('/specialist');

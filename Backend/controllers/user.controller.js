@@ -185,7 +185,8 @@ const createSlotTimeInfo = asyncHandle(async (req, res) => {
       res.status(500).json(new Response(500, "Failed to fetch slots", error));
     }})
 
-export { registerUser,
+export { 
+  registerUser,
   LoginUser,
   LogoutUser,
   createSlotTimeInfo,

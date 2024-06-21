@@ -9,7 +9,6 @@ import { SearchTimeSlot } from '../controllers/user.controller.js';
 import { getAllSlots } from '../controllers/user.controller.js';
 
 
-
 const router = Router();
 
 router.post('/register', registerUser);
