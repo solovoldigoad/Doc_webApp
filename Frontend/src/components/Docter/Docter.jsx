@@ -3,6 +3,7 @@ import React, { useEffect, useState  } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Docter.css';
 
+
 const DoctorCard = () => {
   const [doctors, setDoctors] = useState([]);
 
