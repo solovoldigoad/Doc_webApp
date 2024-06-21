@@ -15,7 +15,7 @@ const DoctorCard = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/v1/users/doctor')
+      .get(`${import.meta.env.VITE_API_URL}/doctor`)
       .then((response) => {
         setDoctors(response.data);
       })
