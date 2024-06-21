@@ -1,8 +1,7 @@
 
 import React , {useState} from "react";
 import './BookedPop.css';
-import { IoClose} from 'react-icons/io5';
-import { useAsyncError, useNavigate } from "react-router-dom";
+
 
 const BookeedPopUp = ({onClosBook}) =>{
     const handleBooked = () =>{

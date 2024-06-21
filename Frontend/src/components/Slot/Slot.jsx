@@ -90,7 +90,7 @@ const Slot = () => {
 
     
         try {
-            const response = await axios.get('http://localhost:8000/api/v1/users/slot/check', {
+            const response = await axios.get(`${import.meta.env.VITE_API_URL}/slot/check`, {
                 params: { // Ensure the parameters are correctly passed
                     day: day,
                     date: date,
@@ -115,7 +115,7 @@ const Slot = () => {
     const handleSaveDetails = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/api/v1/users/slot', {
+            const response = await axios.post(`${import.meta.env.VITE_API_URL}/slot`, {
                 StartTime: startTimeString,
                 day: day,
                 date: date,
