@@ -63,7 +63,6 @@ const DocDetails = () => {
           <p>2:00-5:00</p>
         </div>
       </div>
-      <button id='first' className="doc_btn" >Next Available Slot</button>
       <button id="second" className="doc_btn" onClick={SetYourSlot}>Convenient Slot Booking </button>
     </div>
   );
