@@ -140,7 +140,7 @@ const Slot = () => {
         <div className="slotScreen">
             <div id="AppoientHeading">
                 <h1 id="ScudalHeading">Schedule Appointment</h1>
-                <h2 id = "SelectDate"> Select The Date For Appointment</h2>
+                <h2 id = "SelectDate"> Select The Date </h2>
             </div>
             <div className="week">
                 {week.map((day, index) => (
